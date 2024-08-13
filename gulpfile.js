@@ -53,10 +53,10 @@ export const html = () => {
 //     .pipe(gulp.dest('build/img'))
 // }
 
-// const copyImages = () => {
-//   return gulp.src('source/img/**/*.{png,jpg}')
-//     .pipe(gulp.dest('build/img'))
-// }
+const copyImages = () => {
+  return gulp.src('source/img/**/*.{png,jpg}')
+    .pipe(gulp.dest('build/img'))
+}
 
 // WebP
 
@@ -157,7 +157,7 @@ export const build = gulp.series(
 export default gulp.series(
   clean,
   copy,
-  // copyImages,
+  copyImages,
   gulp.parallel(
     styles,
     html,

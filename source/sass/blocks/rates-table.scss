@@ -1,0 +1,49 @@
+.rates-table {
+  border: none;
+  border-spacing: 0;
+  border-collapse: collapse;
+  transform: translateX(-51%);
+}
+
+.rates-table__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: max-content;
+  margin: 19px auto 35px;
+
+  &--cell {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+  }
+}
+
+.rates-table__cell {
+  min-width: 276px;
+  padding: 0 17px 0 20px;
+  border: 2px solid #e5e5e5;
+  background: $white;
+  border-top: 0;
+  // display: flex;
+
+  &--header {
+    padding: 0;
+    background-color: $text;
+    border: 2px solid #f2f2f2;
+    border-top: none;
+    border-bottom: none;
+  }
+  // &--standart {
+  //   display: flex;
+  //   justify-content: space-between;
+  //   align-items: center;
+  // }
+}
+
+.rates-table__image {
+  margin-left: auto;
+}

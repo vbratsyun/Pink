@@ -1,0 +1,20 @@
+.intro {
+  display: flex;
+  flex-direction: column;
+  background: #1d2631;
+}
+
+.intro__button {
+  @include button;
+
+  padding: 15px 0;
+  margin: 31px 20px 0;
+}
+
+.intro__list {
+  margin: 32px 20px 0;
+}
+
+.intro__text {
+  margin: 25px 20px 31px;
+}

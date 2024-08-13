@@ -1,0 +1,21 @@
+.comment {
+  text-align: center;
+  background-color: $white;
+}
+
+.comment__user-name {
+  margin: 0;
+}
+
+.comment__about-user {
+  display: none;
+}
+
+.comment__blockquote {
+  margin: 0;
+  margin-top: 14px;
+}
+
+.comment__pagination-list {
+  margin-top: 44px;
+}

@@ -1,3 +1,33 @@
-html {
-  background-color: rgb(197, 143, 16);
-}
+@import "global/fonts.scss";
+@import "global/image.scss";
+@import "global/link.scss";
+@import "global/title.scss";
+@import "global/list.scss";
+@import "global/variables.scss";
+@import "global/visually-hidden.scss";
+@import "global/wrapper.scss";
+@import "blocks/page.scss";
+@import "blocks/page-body.scss";
+@import "blocks/page-header.scss";
+@import "blocks/logo.scss";
+@import "blocks/nav-list.scss";
+@import "blocks/page-main.scss";
+@import "blocks/intro.scss";
+@import "blocks/slogan.scss";
+@import "blocks/intro-slogan.scss";
+@import "blocks/intro-button.scss";
+@import "blocks/intro-list.scss";
+@import "blocks/intro-text.scss";
+@import "blocks/info.scss";
+@import "blocks/info-container.scss";
+@import "blocks/info-list.scss";
+@import "blocks/research.scss";
+@import "blocks/comment.scss";
+@import "blocks/user-name.scss";
+@import "blocks/comment-blockquote.scss";
+@import "blocks/pagination-list.scss";
+@import "blocks/pagination-arrows.scss";
+@import "blocks/rates.scss";
+@import "blocks/rates-table.scss";
+@import "blocks/rates-title.scss";
+@import "blocks/rates-price.scss";
