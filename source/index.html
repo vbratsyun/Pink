@@ -10,7 +10,7 @@
 
 <body class="page__body page-body">
   <header class="page-header">
-    <div class="wrapper">
+    <div class="page-header__wrapper wrapper">
       <a class="page-header__logo logo" id="logo" href="#">
         <span class="visually-hidden">Логотип сайта Pink</span>
         <svg class="logo__icon" width="74" height="23" viewBox="0 0 74 23" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -25,17 +25,17 @@
           <span class="visually-hidden">Открыть меню</span>
         </button>
         <ul class="nav__list nav-list list">
-          <li class="nav-list-item">
-            <a class="nav-list-link" href="#">Главная</a>
+          <li class="nav-list__item">
+            <a class="nav-list__link" href="#">Главная</a>
           </li>
-          <li class="nav-list-item">
-            <a class="nav-list-link" href="catalog.html">Фотографии</a>
+          <li class="nav-list__item">
+            <a class="nav-list__link" href="catalog.html">Фотографии</a>
           </li>
-          <li class="nav-list-item">
-            <a class="nav-list-link" href="form.html">Конкурс</a>
+          <li class="nav-list__item">
+            <a class="nav-list__link" href="form.html">Конкурс</a>
           </li>
-          <li class="nav-list-item">
-            <a class="nav-list-link" href="#">Html Academy</a>
+          <li class="nav-list__item">
+            <a class="nav-list__link" href="#">Html Academy</a>
           </li>
         </ul>
       </nav>
@@ -43,49 +43,53 @@
   </header>
 
 
-  <main class="page-main">
+  <main class="page__main page-main">
     <h1 class="visually-hidden">Добро пожаловать на сайт фотоприложения Pink</h1>
-    <section class="intro">
+    <section class="page-main__intro intro">
       <h2 class="visually-hidden">Краткая информация о приложении</h2>
-      <div class="container">
-        <p class="intro__slogan slogan wrapper">Взгляните на жизнь иначе!</p>
-        <button class="intro__button button" type="button">
-          <span class="button__text">Скачать приложение</span>
-        </button>
-        <ul class="intro__list intro-list list">
-          <li class="intro-list-item">
-            <img class="intro-list-icon" src="img/apple-logo.svg" width="47" height="56" alt="Для операционной системы MacOS.">
-          </li>
-          <li class="intro-list-item">
-            <img class="intro-list-icon" src="img/android-logo.svg" width="43" height="47" alt="Для операционной системы Android.">
-          </li>
-          <li class="intro-list-item">
-            <img class="intro-list-icon" src="img/microsoft-logo.svg" width="44" height="41" alt="Для операционной системы Windows.">
-          </li>
-        </ul>
-        <p class="intro__text text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+      <div class="intro__slogan intro-slogan">
+        <p class="slogan slogan--intro">Взгляните на жизнь иначе!</p>
+
+
       </div>
+      <button class="intro__button intro-button" type="button">
+        <span class="intro-button__text">Скачать приложение</span>
+      </button>
+      <ul class="intro__list intro-list list">
+        <li class="intro-list__item">
+          <img class="intro-list__icon image" src="img/apple-logo.svg" width="47" height="56" alt="Для операционной системы MacOS.">
+        </li>
+        <li class="intro-list__item">
+          <img class="intro-list__icon image" src="img/android-logo.svg" width="43" height="47" alt="Для операционной системы Android.">
+        </li>
+        <li class="intro-list__item">
+          <img class="intro-list__icon image" src="img/microsoft-logo.svg" width="44" height="41" alt="Для операционной системы Windows.">
+        </li>
+      </ul>
+      <p class="intro__text intro-text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+
     </section>
 
-    <section class="info">
+    <section class="page-main__info info">
       <h2 class="visually-hidden">Расширенная информация о приложении</h2>
       <div class="wrapper">
-        <p class="info__slogan slogan">Устали от серости мегаполиса?</p>
-        <p class="info__slogan slogan">Нам есть, что вам предложить!</p>
+        <p class="slogan slogan--info">Устали от серости мегаполиса?</p>
+        <p class="slogan">Нам есть, что вам предложить!</p>
       </div>
       <div class="info-container">
-        <ul class="info-list list wrapper">
-          <li class="info-list-item">
-            <h3 class="info-list-title title">Поднимает настроение</h3>
-            <p class="info-list-text text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+        <ul class="info__info-list info-list list wrapper">
+          <li class="info-list__item">
+            <h3 class="info-list__title title">Поднимает настроение</h3>
+
+            <p class="info-list__text text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
           </li>
-          <li class="info-list-item">
-            <h3 class="info-list-title title">Меняет мир вокруг</h3>
-            <p class="info-list-text text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+          <li class="info-list__item">
+            <h3 class="info-list__title title">Меняет мир вокруг</h3>
+            <p class="info-list__text text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
           </li>
-          <li class="info-list-item">
-            <h3 class="info-list-title title">Заводит новых друзей</h3>
-            <p class="info-list-text text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+          <li class="info-list__item">
+            <h3 class="info-list__title title">Заводит новых друзей</h3>
+            <p class="info-list__text text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
           </li>
         </ul>
       </div>
@@ -94,96 +98,143 @@
         <p class="research__text text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
         <a class="research__link" href="">Узнать больше об исследовании</a>
       </div>
-      <div class="comment wrapper">
-        <p class="comment__user-name user-name">Николай Петров</p>
-        <p class="comment__about-user text">25 лет, водитель трамвая</p>
-        <blockquote class="comment__blockquote text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</blockquote>
-        <ul class="pagination-list list">
-          <li class="pagination-list-item">
-            <button class="pagination-toggle" type="button">
-              <span class="visually-hidden">1 комментарий</span>
+      <div class="info__comment comment">
+        <div class="wrapper">
+          <p class="comment__user-name user-name">Николай Петров</p>
+
+          <p class="comment__about-user text">25 лет, водитель трамвая</p>
+          <blockquote class="comment__blockquote comment-blockquote">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</blockquote>
+          <ul class="comment__pagination-list pagination-list list">
+            <li class="pagination-list__item">
+              <button class="pagination-list__toggle" type="button">
+                <span class="visually-hidden">1 комментарий</span>
+              </button>
+            </li>
+            <li class="pagination-list__item">
+              <button class="pagination-list__toggle" type="button">
+                <span class="visually-hidden">2 комментарий</span>
+              </button>
+            </li>
+            <li class="pagination-list__item">
+              <button class="pagination-list__toggle" type="button">
+                <span class="visually-hidden">3 комментарий</span>
+              </button>
+            </li>
+          </ul>
+          <div class="pagination-arrows">
+            <button class="pagination-arrows__prew pagination-arrows-prew">
+              <span class="visually-hidden">Предыдущий комментарий</span>
             </button>
-          </li>
-          <li class="pagination-list-item">
-            <button class="pagination-toggle" type="button">
-              <span class="visually-hidden">2 комментарий</span>
+            <button class="pagination-arrows__next pagination-arrows-next">
+              <span class="visually-hidden">Следующий комментарий</span>
             </button>
-          </li>
-          <li class="pagination-list-item">
-            <button class="pagination-toggle" type="button">
-              <span class="visually-hidden">3 комментарий</span>
-            </button>
-          </li>
-        </ul>
-        <div class="pagination-arrows">
-          <button class="pagination-arrows__prew pagination-arrows-prew">
-            <span class="visually-hidden">Предыдущий комментарий</span>
-          </button>
-          <button class="pagination-arrows__next pagination-arrows-next">
-            <span class="visually-hidden">Следующий комментарий</span>
-          </button>
+          </div>
         </div>
+
       </div>
       <div class="rates">
-        <table class="rates__table rates-table wrapper">
-          <tr class="rates-table-row">
-            <td class="rates-table-cell"></td>
-            <td class="rates-table-cell rates-table-cell--header">
-              <p class="rates-table-title">База</p>
-              <p class="rates-table-price">1,99 USD</p>
-            </td>
-            <td class="rates-table-cell rates-table-cell--header">
-              <p class="rates-table-title">Стандарт</p>
-              <p class="rates-table-price">3,99 USD</p>
-            </td>
-            <td class="rates-table-cell rates-table-cell--header">
-              <p class="rates-table-title">Анлим</p>
-              <p class="rates-table-price">9,99 USD</p>
-            </td>
-          </tr>
-          <tr class="rates-table-row">
-            <td class="rates-table-cell">
-              <p class="rates-table-parameters text">Розовый фильтр</p>
-            </td>
-            <td class="rates-table-cell">
-              <img src="img/yes.svg" width="31" height="21" alt="Включено.">
-            </td>
-            <td class="rates-table-cell">
-              <img src="img/yes.svg" width="31" height="21" alt="Включено.">
-            </td>
-            <td class="rates-table-cell">
-              <img src="img/yes.svg" width="31" height="21" alt="Включено.">
-            </td>
-          </tr>
-          <tr class="rates-table-row">
-            <td class="rates-table-cell">
-              <p class="rates-table-parameters text">Смайлики</p>
-            </td>
-            <td class="rates-table-cell">
-              <img src="img/no.svg" width="31" height="21" alt="Отсутствует.">
-            </td>
-            <td class="rates-table-cell">
-              <img src="img/yes.svg" width="31" height="21" alt="Включено.">
-            </td>
-            <td class="rates-table-cell">
-              <img src="img/yes.svg" width="31" height="21" alt="Включено.">
-            </td>
-          </tr>
-          <tr class="rates-table-row">
-            <td class="rates-table-cell">
-              <p class="rates-table-parameters text">Комментарии</p>
-            </td>
-            <td class="rates-table-cell">
-              <img src="img/no.svg" width="31" height="21" alt="Отсутствует.">
-            </td>
-            <td class="rates-table-cell">
-              <img src="img/no.svg" width="31" height="21" alt="Отсутствует.">
-            </td>
-            <td class="rates-table-cell">
-              <img src="img/yes.svg" width="31" height="21" alt="Включено.">
-            </td>
-          </tr>
-        </table>
+        <div class="rates__wrapper wrapper">
+          <table class="rates__table rates-table">
+            <tr class="rates-table__row">
+              <td class="rates-table__cell">
+              </td>
+              <td class="rates-table__cell rates-table__cell--header">
+                <div class="rates-table__container">
+                  <p class="rates-table__title rates-title">База</p>
+                  <p class="rates-table__price rates-price">1,99 USD</p>
+                </div>
+
+              </td>
+              <td class="rates-table__cell rates-table__cell--header">
+                <div class="rates-table__container">
+                  <p class="rates-table__title rates-title">Стандарт</p>
+                  <p class="rates-table__price rates-price">3,99 USD</p>
+                </div>
+
+              </td>
+              <td class="rates-table__cell rates-table__cell--header">
+                <div class="rates-table__container">
+                  <p class="rates-table__title rates-title">Анлим</p>
+                  <p class="rates-table__price rates-price">9,99 USD</p>
+                </div>
+
+              </td>
+            </tr>
+            <tr class="rates-table__row">
+              <td class="rates-table__cell">
+                <div class="rates-table__container rates-table__container--cell">
+                  <p class="rates-table__parameters">Розовый фильтр</p>
+                </div>
+              </td>
+              <td class="rates-table__cell">
+                <div class="rates-table__container rates-table__container--cell">
+                  <img class="image rates-table__image" src="img/yes.svg" width="31" height="21" alt="Включено.">
+                </div>
+
+              </td>
+              <td class="rates-table__cell">
+                <div class="rates-table__container rates-table__container--cell">
+                  <p class="rates-table__parameters">Розовый фильтр</p>
+                  <img class="image rates-table__image" src="img/yes.svg" width="31" height="21" alt="Включено.">
+                </div>
+
+              </td>
+              <td class="rates-table__cell">
+                <div class="rates-table__container rates-table__container--cell">
+                  <img class="image rates-table__image" src="img/yes.svg" width="31" height="21" alt="Включено.">
+                </div>
+              </td>
+            </tr>
+            <tr class="rates-table__row">
+              <td class="rates-table__cell">
+                <div class="rates-table__container rates-table__container--cell">
+                  <p class="rates-table__parameters">Смайлики</p>
+                </div>
+              </td>
+              <td class="rates-table__cell">
+                <div class="rates-table__container rates-table__container--cell">
+                  <img class="image rates-table__image" src="img/no.svg" width="31" height="21" alt="Отсутствует.">
+                </div>
+              </td>
+              <td class="rates-table__cell">
+                <div class="rates-table__container rates-table__container--cell">
+                  <p class="rates-table__parameters">Смайлики</p>
+                  <img class="image rates-table__image" src="img/yes.svg" width="31" height="21" alt="Включено.">
+                </div>
+
+              </td>
+              <td class="rates-table__cell">
+                <div class="rates-table__container rates-table__container--cell">
+                  <img class="image rates-table__image" src="img/yes.svg" width="31" height="21" alt="Включено.">
+                </div>
+              </td>
+            </tr>
+            <tr class="rates-table__row">
+              <td class="rates-table__cell">
+                <div class="rates-table__container rates-table__container--cell">
+                  <p class="rates-table-parameters">Комментарии</p>
+                </div>
+              </td>
+              <td class="rates-table__cell">
+                <div class="rates-table__container rates-table__container--cell">
+                  <img class="image rates-table__image" src="img/no.svg" width="31" height="21" alt="Отсутствует.">
+                </div>
+              </td>
+              <td class="rates-table__cell">
+                <div class="rates-table__container rates-table__container--cell">
+                  <p class="rates-table-parameters">Комментарии</p>
+                  <img class="image rates-table__image" src="img/no.svg" width="31" height="21" alt="Отсутствует.">
+                </div>
+
+              </td>
+              <td class="rates-table__cell">
+                <div class="rates-table__container rates-table__container--cell">
+                  <img class="image rates-table__image" src="img/yes.svg" width="31" height="21" alt="Включено.">
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
       </div>
     </section>
 
@@ -207,10 +258,10 @@
         </li>
       </ul>
       <div class="contacts__map">
-        <iframe class="contacts__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533248!2d30.32085871633224!3d59.93871648187619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya%20Konyushennaya%20St%2C%2019%2F8%2C%20Sankt-Peterburg%2C%20191186!5e0!3m2!1sen!2sru!4v1663265371314!5m2!1sen!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" tabindex="-1" title="Офис в Санкт-Петербурге"></iframe>
+        <iframe class="contacts__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533248!2d30.32085871633224!3d59.93871648187619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya%20Konyushennaya%20St%2C%2019%2F8%2C%20Sankt-Peterburg%2C%20191186!5e0!3m2!1sen!2sru!4v1663265371314!5m2!1sen!2sru" width="320" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" tabindex="-1" title="Офис в Санкт-Петербурге"></iframe>
 
         <picture>
-          <img class="contacts__image image" src="img/contacts-map-mobile.jpg" srcset="img/contacts-map-mobile@2x.jpg" width="211" height="51" alt="Россия, Санкт-Петербург, ул. Большая Конюшенная, 19/8">
+          <img class="contacts__image image" src="img/contacts-map-mobile.jpg" srcset="img/contacts-map-mobile@2x.jpg 2x" width="320" height="200" alt="Россия, Санкт-Петербург, ул. Большая Конюшенная, 19/8.">
         </picture>
       </div>
     </section>

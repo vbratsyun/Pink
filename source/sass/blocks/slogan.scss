@@ -1,0 +1,19 @@
+.slogan {
+  margin: 0;
+  font-family: inherit;
+  font-size: 24px;
+  line-height: 120%;
+  font-weight: 300;
+  text-align: center;
+
+  &--intro {
+    padding-top: 90px;
+    padding-bottom: 314px;
+    margin: 0 20px;
+    color: $white;
+  }
+
+  &--info {
+    margin-bottom: 30px;
+  }
+}

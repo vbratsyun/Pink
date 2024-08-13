@@ -1,0 +1,15 @@
+.rates {
+  background: url("../../img/rates-back-mobile.png") no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.rates__wrapper {
+  margin-top: 89px;
+  margin-bottom: 100px;
+}
+
+.rates-table__title,
+.rates-table__price {
+  @include margin;
+}
