@@ -1,8 +1,33 @@
 .pagination-list {
   display: flex;
   justify-content: center;
+  gap: 10px 19px;
+  flex-wrap: wrap;
+
+  @media (min-width: $desktop-width) {
+    &--comment {
+      display: none;
+    }
+  }
 }
 
 .pagination-list__toggle {
-  display: block;
+  width: 6px;
+  height: 6px;
+  outline: 3px solid transparent;
+  background-color: rgba(40, 54, 69, 0.3);
+  border-radius: 50%;
+
+  &:hover {
+    background-color: rgba(40, 54, 69, 0.6);
+  }
+
+  &:active {
+    background-color: rgba(40, 54, 69, 0.1);
+  }
+
+  &--current {
+    background-color: $white;
+    outline-color: $main-color;
+  }
 }

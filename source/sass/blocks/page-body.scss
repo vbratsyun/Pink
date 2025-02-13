@@ -1,7 +1,17 @@
 .page-body {
+  position: relative;
   display: flex;
   flex-direction: column;
   min-height: 100%;
-  color: $text;
+  color: $main-color;
   background-color: $white;
+}
+
+.page-body__page-header {
+  position: absolute;
+  z-index: 1;
+}
+
+.page-body__page-contest {
+  margin-bottom: 3px;
 }

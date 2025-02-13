@@ -1,3 +1,90 @@
 .research {
   display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    padding-left: 310px;
+    padding-bottom: 122px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    padding: 59px 0 113px 0;
+    background-color: #f2f2f2;
+  }
+}
+
+.research__container {
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      content: "";
+      position: absolute;
+      z-index: 2;
+      top: -39px;
+      left: -290px;
+      width: 238px;
+      height: 276px;
+      background: url("../img/research-timer.svg") no-repeat;
+      background-size: cover;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 540px;
+    margin: 0 auto;
+    padding: 0;
+    left: 170px;
+
+    &::before {
+      top: -92px;
+      left: -370px;
+      width: 298px;
+      height: 345px;
+    }
+  }
+}
+
+.research__title {
+  font-size: 30px;
+  color: $black;
+  margin: 0;
+  margin-bottom: 24px;
+
+  @media (min-width: $tablet-width) {
+    line-height: 38px;
+    margin-bottom: 9px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 524px;
+    margin-bottom: 24px;
+  }
+}
+
+.research__text {
+  margin: 0;
+  margin-bottom: 24px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 528px;
+    font-size: 18px;
+    line-height: 29px;
+    margin-bottom: 33px;
+  }
+}
+
+.research__link {
+  color: $hover;
+  text-decoration: underline;
+
+  @media (min-width: $desktop-width) {
+    max-width: 524px;
+    font-size: 18px;
+  }
 }

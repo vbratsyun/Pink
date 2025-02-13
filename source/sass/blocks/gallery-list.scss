@@ -1,0 +1,208 @@
+.gallery-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: min-content 300px min-content;
+    gap: 51px 20px;
+    justify-content: center;
+  }
+}
+
+.gallery-list__item {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: max-content 1fr;
+
+    &:first-of-type {
+      grid-column: 1/-1;
+    }
+
+    &:nth-of-type(even) {
+      margin: 0 0 0 20px;
+    }
+
+    &:nth-of-type(odd):not(:first-of-type) {
+      margin: 0 20px 0 0;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &:first-of-type {
+      grid-template-rows: 509px 1fr;
+    }
+
+    &:nth-of-type(even) {
+      margin: 0;
+    }
+
+    &:nth-of-type(odd):not(:first-of-type) {
+      margin: 0;
+    }
+  }
+}
+
+.gallery-list__image {
+  margin: 0 auto;
+  object-fit: cover;
+
+  &--panorama {
+    width: 100%;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    height: 300px;
+
+    &--panorama {
+      width: 100%;
+      min-height: 509px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 300px;
+    height: 400px;
+    margin: 0;
+
+    &--panorama {
+      position: absolute;
+      left: 0;
+      width: 100%;
+      max-height: 506px;
+    }
+  }
+}
+
+.gallery-list__container {
+  max-width: 280px;
+  padding: 18px 11px 18px 17px;
+  margin: 0 auto;
+  background-color: #f2f2f2;
+  box-sizing: border-box;
+
+  &--first {
+    position: relative;
+
+    &::after {
+      content: "ПАНОРАМА ДНЯ";
+      position: absolute;
+      top: -137px;
+      right: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+      font-weight: 700;
+      width: 140px;
+      height: 36px;
+      color: $white;
+      background-color: $hover;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    max-width: 100%;
+    margin: 0;
+    padding: 23px 30px;
+
+    &--first {
+      margin: 0 20px 30px;
+      padding: 24px 30px;
+      align-items: start;
+      grid-template-columns: repeat(2, 1fr);
+
+      &::after {
+        top: -452px;
+      }
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 300px;
+    padding: 22px 31px 23px 27px;
+    min-height: 155px;
+
+    &--first {
+      max-width: 100%;
+      margin: 0;
+      padding: 21px 27px 25px;
+      min-height: auto;
+
+      &::after {
+        top: -455px;
+      }
+    }
+  }
+}
+
+.gallery-list__user-name {
+  font-weight: 700;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+}
+
+.gallery-list-date {
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 12px;
+  margin: 0 0 23px;
+}
+
+.gallery-list__comment {
+  margin: 0 auto 11px;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1/-1;
+    grid-row: 2/3;
+    min-height: 48px;
+    margin: 0 0 12px;
+
+    &--first {
+      margin: 0;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: auto;
+  }
+}
+
+.gallery-list__likes {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  flex-wrap: wrap;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+
+    &--first {
+      grid-column: 2 / -1;
+      grid-row: 1 / 2;
+      flex-direction: row-reverse;
+      justify-content: flex-start;
+    }
+  }
+}
+
+.gallery-list__likes-text {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: $hover;
+  margin: 0;
+}

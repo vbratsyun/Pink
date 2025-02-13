@@ -1,20 +1,155 @@
 .intro {
   display: flex;
   flex-direction: column;
-  background: #1d2631;
+  align-items: center;
+  background-color: $main-color;
+
+  background-image: url("../img/index/intro-background-phone-mobile.png"),
+    url("../img/index/intro-background-desktop.jpg");
+  background-repeat: no-repeat, no-repeat;
+  background-size: auto, 660px 462px;
+  background-position: center 176px, top;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/index/intro-background-phone-mobile@2x.png"),
+      url("../img/index/intro-background-desktop@2x.jpg");
+    background-repeat: no-repeat, no-repeat;
+    background-size: 320px 286px, 660px 462px;
+    background-position: center 176px, top;
+  }
+
+  @media (min-width: $tablet-width) {
+    align-items: start;
+    background-image: url("../img/index/intro-background-phone-tablet.png"),
+      url("../img/index/intro-background-tablet.jpg");
+    background-repeat: no-repeat, no-repeat;
+    background-size: auto, cover;
+    background-position: bottom, top;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/index/intro-background-phone-tablet@2x.png"),
+        url("../img/index/intro-background-tablet@2x.jpg");
+      background-repeat: no-repeat, no-repeat;
+      background-size: 660px 545px, cover;
+      background-position: bottom, top;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/index/intro-background-phone-desktop.png"),
+      url("../img/index/intro-background-desktop.jpg");
+    background-repeat: no-repeat, no-repeat;
+    background-size: auto, cover;
+    background-position: 97% bottom, top;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/index/intro-background-phone-desktop@2x.png"),
+        url("../img/index/intro-background-desktop@2x.jpg");
+      background-repeat: no-repeat, no-repeat;
+      background-size: 1050px 645px, cover;
+      background-position: 97% bottom, top;
+    }
+  }
+}
+
+.intro__wrapper {
+  @media (min-width: $desktop-width) {
+    position: relative;
+    left: -321px;
+    max-width: 940px;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+
+.intro__slogan {
+  min-height: 56px;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 120%;
+  text-align: center;
+  color: $white;
+  margin: 90px 20px 339px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 247px;
+    font-size: 40px;
+    margin: 204px 25px 27px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 50px;
+    margin: 211px auto 39px;
+    line-height: 67px;
+  }
 }
 
 .intro__button {
-  @include button;
+  width: 276px;
+  max-width: 280px;
+  padding: 15.5px 33.5px;
+  border : 3px solid $white;
+  border-radius: 29px;
+  margin: 28px auto 32px;
 
-  padding: 15px 0;
-  margin: 31px 20px 0;
+  @media (min-width: $tablet-width) {
+    margin: 0 0 42px;
+    min-width: 300px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 16px 28px;
+    margin: 0 auto 67px;
+  }
+}
+
+.intro__button-text {
+  color: $white;
+
+  @media (min-width: $desktop-width) {
+    font-size: 21px;
+  }
+}
+
+.intro__button:hover {
+    background-color: $white;
+}
+
+.intro__button:hover .intro__button-text {
+  color: $hover;
+}
+
+.intro__button:active .intro__button-text {
+  color: rgba(210, 40, 86, 0.3);
 }
 
 .intro__list {
-  margin: 32px 20px 0;
+  margin: 0 20px 24px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 46px 38px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 66px 49px;
+  }
 }
 
 .intro__text {
-  margin: 25px 20px 31px;
+  text-align: center;
+  color: $white;
+  margin: 0 20px 31px;
+  word-spacing: -1.8px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    font-weight: 300;
+    margin: 0 auto 115px;
+    max-width: 300px;
+    word-spacing: 0.2px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 auto 124px;
+  }
 }

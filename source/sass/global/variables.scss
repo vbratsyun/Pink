@@ -1,23 +1,9 @@
-$text: #283645;
+$main-color: #283645;
 $black: #000000;
-$white: #ffffffff;
+$white: #ffffff;
+$hover: #d22856;
 
-@mixin margin {
-  margin: 0;
-}
-
-@mixin padding {
-  padding: 0;
-}
-
-@mixin button {
-  display: block;
-  padding: 0;
-  margin: 0;
-  font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 18px;
-  background-color: transparent;
-  border: none;
-}
+//viewport
+$tablet-width: 660px;
+$desktop-width: 1200px;
+$mobile-width-only: 320px;

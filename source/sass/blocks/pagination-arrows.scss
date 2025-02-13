@@ -1,3 +1,42 @@
 .pagination-arrows {
   display: none;
+  position: relative;
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 28px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    max-width: 940px;
+  }
 }
+
+.pagination-arrows__prew,
+.pagination-arrows__next {
+  opacity: 0.3;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
+}
+
+.pagination-arrows__prew {
+  display: block;
+  width: 22px;
+  height: 41px;
+  background: url("../img/pagination-left-arrow.svg") no-repeat;
+}
+
+.pagination-arrows__next {
+  display: block;
+  width: 22px;
+  height: 41px;
+  background: url("../img/pagination-right-arrow.svg") no-repeat;
+}
+

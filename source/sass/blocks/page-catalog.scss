@@ -1,0 +1,15 @@
+.page-catalog {
+  flex-grow: 1;
+}
+
+.page-catalog__gallery {
+  margin: 0 auto 45px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 64px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 58px;
+  }
+}

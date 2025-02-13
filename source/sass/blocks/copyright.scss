@@ -1,0 +1,38 @@
+.copyright__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 15px;
+  flex-wrap: wrap;
+  max-width: 155px;
+  color: $main-color;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    top: 4px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -4px;
+    left: 1px;
+  }
+}
+
+.copyright__text {
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+  }
+}
+
+.copyright__icon {
+  display: block;
+}
+
+
+.copyright__link:hover .copyright__icon {
+  fill: $main-color;
+}
+
+.copyright__link:active .copyright__icon {
+  fill: rgba(40, 54, 69, 0.3);
+}
