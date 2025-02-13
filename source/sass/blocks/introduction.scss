@@ -1,28 +1,31 @@
 .introduction__container {
   padding: 97px 74px 79px;
   background-color: $main-color;
-  background: url("../img/catalog/gallery-background-mobile.jpg") no-repeat;
+  background-image: url("../img/catalog/gallery-background-mobile.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
 
   &--page-contest {
     padding: 96px 46px 44px;
   }
 
   @media (min-resolution: 2dppx) {
-    background: url("../img/catalog/gallery-background-mobile@2x.jpg") no-repeat;
+    background-image: url("../img/catalog/gallery-background-mobile@2x.jpg");
     background-size: cover;
+    background-repeat: no-repeat;
   }
 
   @media (min-width: $tablet-width) {
     padding: 179px 151px 129px;
 
-    background: url("../img/catalog/gallery-background-tablet.jpg") no-repeat;
+    background-image: url("../img/catalog/gallery-background-tablet.jpg");
     background-size: cover;
+    background-repeat: no-repeat;
 
     @media (min-resolution: 2dppx) {
-      background: url("../img/catalog/gallery-background-tablet@2x.jpg")
-        no-repeat;
+      background-image: url("../img/catalog/gallery-background-tablet@2x.jpg");
       background-size: cover;
+      background-repeat: no-repeat;
     }
 
     &--page-contest {
@@ -33,19 +36,19 @@
   @media (min-width: $desktop-width) {
     padding: 171px 151px 91px;
 
-    background: url("../img/catalog/gallery-background-desktop.jpg") no-repeat;
+    background-image: url("../img/catalog/gallery-background-desktop.jpg");
     background-size: cover;
+    background-repeat: no-repeat;
 
     @media (min-resolution: 2dppx) {
-      background: url("../img/catalog/gallery-background-desktop@2x.jpg")
-        no-repeat;
+      background-image: url("../img/catalog/gallery-background-desktop@2x.jpg");
       background-size: cover;
+      background-repeat: no-repeat;
     }
 
     &--page-contest {
       padding: 171px 151px 88px;
     }
-  
   }
 }
 

@@ -47,6 +47,7 @@
 
   @media (min-width: $desktop-width) {
     padding-top: 30px;
+
     &--mood::before,
     &--world::before,
     &--friends::before {
