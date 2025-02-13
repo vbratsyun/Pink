@@ -1,21 +1,104 @@
 .comment {
   text-align: center;
   background-color: $white;
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    max-width: 940px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -112px;
+      left: 0;
+      right: 0;
+      margin: auto;
+      width: 79px;
+      height: 63px;
+      background: url("../img/comment-quotes.svg") no-repeat;
+    }
+  }
+}
+
+.comment__container {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 124px;
+  }
+}
+
+.comment__slide {
+  min-height: 257px;
+  display: none;
+
+  &--current {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (min-width: $tablet-width) {
+    min-height: 224px;
+  }
 }
 
 .comment__user-name {
-  margin: 0;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  color: $black;
+  margin: 0 auto 14px;
+  order: 2;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    margin: 0 auto 2px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 24px;
+    margin: 0 auto 4px;
+  }
 }
 
 .comment__about-user {
   display: none;
+  order: 3;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    margin: 0 auto 42px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+  }
 }
 
 .comment__blockquote {
-  margin: 0;
-  margin-top: 14px;
+  line-height: 30px;
+  margin: 0 auto 33px;
+  order: 1;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    margin: 0 auto 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 688px;
+  }
 }
 
 .comment__pagination-list {
-  margin-top: 44px;
+  margin: 0 auto;
+  order: 4;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto 0;
+  }
 }

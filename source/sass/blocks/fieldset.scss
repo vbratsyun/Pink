@@ -1,0 +1,392 @@
+.fieldset {
+  display: flex;
+  flex-direction: column;
+  padding: 0 21px;
+  margin: 0;
+  border: none;
+
+  &--personality {
+    gap: 22px;
+  }
+
+  &--contacts {
+    gap: 29px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+
+    &--personality {
+      row-gap: 56px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+
+    &--contacts {
+      padding: 0 0 7px 0;
+    }
+
+    &--emotions {
+      padding: 0 0 35px 0;
+    }
+  }
+}
+
+.fieldset__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+
+  @media (min-width: $tablet-width) {
+    gap: 34px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 74px;
+  }
+}
+
+.fieldset__legend {
+  display: block;
+  text-transform: uppercase;
+  color: $hover;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0;
+
+  &--progress {
+    width: 90%;
+    margin-bottom: 39px;
+    line-height: 130%;
+  }
+
+  &--contacts {
+    display: none;
+  }
+
+  &--application {
+    margin-bottom: 36px;
+    line-height: 130%;
+  }
+
+  &--emotions {
+    margin-bottom: 14px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 0 25px;
+    background-color: $white;
+    // width: max-content;
+
+    &--application {
+      margin-bottom: 46px;
+    }
+
+    &--contacts {
+      position: relative;
+      top: -2px;
+      display: block;
+      margin-bottom: 32px;
+      padding: 0 32px;
+    }
+
+    &--emotions {
+      padding: 0 38px;
+      margin-bottom: 33px;
+    }
+
+    &--progress {
+      margin-bottom: 44px;
+      width: 63%;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--application {
+      position: relative;
+      top: 5px;
+      margin-bottom: 50px;
+    }
+
+    &--progress {
+      padding: 2px 25px 0;
+    }
+
+    &--emotions {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.fieldset__container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+
+    &--phone,
+    &--mail {
+      position: relative;
+      flex-direction: column-reverse;
+      margin: 0 60px;
+      align-items: flex-start;
+      gap: 11px;
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 59px;
+        height: 59px;
+        background-color: #e5e5e5;
+        z-index: 0;
+      }
+    }
+
+    &--phone {
+      &::after {
+        content: "";
+        position: absolute;
+        background-image: url("../img/phone-icon.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    }
+
+    &--mail {
+      &::after {
+        content: "";
+        position: absolute;
+        background-image: url("../img/mail-icon.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--phone {
+      margin: 0;
+      margin-left: 60px;
+    }
+
+    &--mail {
+      margin: 0;
+      margin-right: 60px;
+    }
+  }
+}
+
+.fieldset__container-label {
+  text-transform: uppercase;
+  color: $hover;
+  text-indent: 23px;
+
+  @media (min-width: $tablet-width) {
+    text-indent: 0;
+    padding-top: 4px;
+
+    &--phone,
+    &--mail {
+      text-indent: 18px;
+    }
+  }
+}
+
+.fieldset__container-input {
+  display: block;
+  width: 100%;
+  min-width: 270px;
+  padding: 20px 22px 18px;
+  letter-spacing: 0.4px;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 69px;
+    letter-spacing: 0.3px;
+  }
+}
+
+.fieldset__list {
+  display: flex;
+  flex-direction: column;
+
+  &--checkbox {
+    gap: 47px;
+  }
+
+  &--radio {
+    gap: 40px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin: 0 62px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 75px;
+
+    &--checkbox {
+      display: grid;
+      grid-template-columns: repeat(3, auto);
+      gap: 47px 58px;
+      padding: 0 0 51px;
+      margin: 0 61px;
+    }
+  }
+}
+
+.fieldset__item {
+  @media (min-width: $desktop-width) {
+    &--selfie {
+      order: 1;
+    }
+
+    &--beach {
+      order: 4;
+    }
+
+    &--сhuck-norris {
+      order: 2;
+    }
+
+    &--souvenir {
+      order: 5;
+    }
+
+    &--tower {
+      order: 3;
+    }
+
+    &--hotel {
+      order: 6;
+    }
+  }
+}
+
+.fieldset__label {
+  display: flex;
+  align-items: center;
+  gap: 23px;
+  flex-wrap: wrap;
+
+  &--radio {
+    gap: 23px 34px;
+  }
+
+  @media (min-width: $tablet-width) {
+    gap: 23px;
+
+    &--checkbox {
+      gap: 21px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 22px;
+  }
+}
+
+.fieldset__mark {
+  position: relative;
+  display: block;
+  width: 35px;
+  height: 35px;
+  background-color: $white;
+  outline: 2px solid #e5e5e5;
+  border-radius: 1px;
+
+  &--radio {
+    border-radius: 50%;
+  }
+}
+
+.fieldset__control[type="checkbox"]:checked + .fieldset__mark {
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: 22px;
+    height: 16px;
+    background: url("../img/arrow.svg") no-repeat;
+  }
+}
+
+.fieldset__control[type="radio"]:checked + .fieldset__mark {
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: 15px;
+    height: 15px;
+    background-color: $hover;
+    border-radius: 50%;
+  }
+}
+
+.fieldset__text {
+  font-size: 18px;
+}
+
+.fieldset__textarea {
+  width: 100%;
+  max-height: 200px;
+  font-size: 18px;
+  line-height: 158%;
+  margin: 0;
+  padding: 16px 16px 18px 20px;
+  outline: 2px solid #e5e5e5;
+  border: none;
+  border-radius: 1px;
+  box-sizing: border-box;
+  resize: none;
+
+  &::placeholder {
+    color: $main-color;
+  }
+
+  &:hover {
+    outline: 2px solid #283645;
+  }
+
+  &:active {
+    outline: 2px solid $hover;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 81%;
+    max-height: 193px;
+    margin: 0 auto;
+    letter-spacing: -0.2px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 87%;
+    max-height: 128px;
+    margin: 0 auto;
+  }
+}
+
+.fieldset__label:hover .fieldset__mark {
+  outline: 2px solid $main-color;
+}
+
+.fieldset__label:active .fieldset__mark {
+  outline: 2px solid $hover;
+}

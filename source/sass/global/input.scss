@@ -1,0 +1,29 @@
+.input {
+  font-size: 18px;
+  color: #283645;
+  padding: 23px 20px;
+  border: none;
+  outline: 2px solid #e5e5e5;
+  border-radius: 1px;
+  box-sizing: border-box;
+
+  &::placeholder {
+    color: #283645;
+  }
+
+  &:hover {
+    outline: 2px solid #283645;
+  }
+
+  &:active {
+    outline: 2px solid #d22856;
+  }
+
+  &--error {
+    outline: 2px solid #d22856;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 19px 20px;
+  }
+}

@@ -2,14 +2,10 @@
   height: 100%;
   font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
   font-size: 14px;
+  line-height: 120%;
   line-height: 24px;
 }
 
 .page__body {
-  @include margin;
-}
-
-.page__main {
-  z-index: -1;
-  margin-top: -66px;
+  margin: 0;
 }

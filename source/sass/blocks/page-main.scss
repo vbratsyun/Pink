@@ -4,4 +4,31 @@
 
 .page-main__intro {
   margin-bottom: 41px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 67px;
+  }
+}
+
+.page-main__info {
+  margin-bottom: 38px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 79px;
+  }
+}
+
+.page-main__research {
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 185px;
+  }
 }

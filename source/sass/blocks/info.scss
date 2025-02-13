@@ -1,9 +1,108 @@
+.info__slogan {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 120%;
+  margin: 0 auto;
+  text-align: center;
+
+  &:first-of-type {
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 40px;
+
+    &:first-of-type {
+      margin-bottom: 4px;
+    }
+
+    &:last-of-type {
+      width: 92%;
+      line-height: 53px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 50px;
+    max-width: 940px;
+
+    &:first-of-type {
+      margin-bottom: 8px;
+    }
+
+    &:last-of-type {
+      line-height: 65px;
+      max-width: 723px;
+    }
+  }
+}
+
+.info__container {
+  background: url("../img/index/info-background-phone-mobile.png"),
+    url("../img/info-background-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: 165px 326px, cover;
+  background-position: center 540px, center -12px;
+  margin-bottom: 41px;
+
+  @media (min-resolution: 2dppx) {
+    background: url("../img/index/info-background-phone-mobile@2x.png"),
+      url("../img/info-background-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: 165px 326px, cover;
+    background-position: center 540px, center -12px;
+  }
+
+  @media (min-width: $tablet-width) {
+    min-height: 486px;
+    background: url("../img/index/info-background-phone-tablet.png"),
+      url("../img/info-background-tablet.svg");
+    background-repeat: no-repeat;
+    background-size: 268px 547px, cover;
+    background-position: 5% -10%, 0 -22px;
+    margin-bottom: 93px;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../img/index/info-background-phone-tablet@2x.png"),
+        url("../img/info-background-tablet.svg");
+      background-repeat: no-repeat;
+      background-size: 268px 547px, cover;
+      background-position: 5% -10%, 0 -22px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    z-index: 1;
+    min-height: auto;
+    padding: 383px 130px 38px;
+    margin-bottom: 0;
+    background: url("../img/info-background-tablet.svg") no-repeat;
+    background-size: cover;
+    background-position: 0 16px;
+  }
+}
+
 .info__info-list {
-  padding-top: 113px;
-  padding-bottom: 286px;
+  @media (min-width: $tablet-width) {
+    margin-top: 31px;
+    margin-bottom: 0;
+    margin-left: 310px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
 }
 
 .info__comment {
-  padding-top: 41px;
-  padding-bottom: 60px;
+  margin-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 3px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 auto;
+  }
 }
