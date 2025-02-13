@@ -115,9 +115,32 @@
   border-radius: 29px;
   margin: 0 auto;
 
+  &:hover {
+    border: 3px solid rgba(#283645, 0.3);
+    color: rgba(#283645, 0.3);
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(#283645, 0.3);
+    border: 3px solid transparent;
+  }
+
   &--submit {
     border: 3px solid $hover;
     color: $hover;
+
+    &:hover {
+      color: $white;
+      background-color: $hover;
+      border: 3px solid $hover;
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+      background-color: $hover;
+      border: 3px solid transparent;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -144,32 +167,3 @@
   fill: $hover;
   opacity: 1;
 }
-
-.photo-editor__button {
-  &:hover {
-    border: 3px solid rgba(#283645, 0.3);
-    color: rgba(#283645, 0.3);
-  }
-
-  &:active {
-    color: rgba(255, 255, 255, 0.3);
-    background-color: rgba(#283645, 0.3);
-    border: 3px solid transparent;
-  }
-}
-
-.photo-editor__button--submit {
-  &:hover {
-    color: $white;
-    background-color: $hover;
-    border: 3px solid  $hover;
-  }
-
-  &:active {
-    color: rgba(255, 255, 255, 0.3);
-    background-color: $hover;
-    border: 3px solid transparent;
-  }
-}
-
-

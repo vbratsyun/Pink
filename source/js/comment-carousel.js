@@ -40,4 +40,3 @@ buttonForward.addEventListener('click', onButtonForwardClick);
 
 // Инициализация начального состояния
 updateCarousel(0);
-
