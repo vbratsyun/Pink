@@ -48,6 +48,7 @@
 
     &--page-contest {
       padding: 171px 151px 88px;
+      min-height: 135px;
     }
   }
 }
@@ -70,6 +71,8 @@
 
     &--page-contest {
       line-height: 135%;
+      max-width: 1063px;
+      margin: 0 auto;
     }
   }
 }
